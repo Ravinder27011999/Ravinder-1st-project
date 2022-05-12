@@ -1,0 +1,16 @@
+<section>
+  <ul>
+    <% Menu.active.each do |menu| %>
+      <li>
+        <h3 class="shadow-md m-2 p-2 text-gray-700 hover:text-black text-5xl rounded-md hover:bg-gray-200">
+          <%= menu.name%> :
+        </h3>
+        <ul align="center">
+          <% menu.menu_items.each do |item| %>
+            <%= render partial: "item-card", locals: {item: item, menu: menu} %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+</section>

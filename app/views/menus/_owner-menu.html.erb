@@ -1,0 +1,41 @@
+<section>
+  <%= form_with url: menus_path, class: "flex" do |form| %>
+      <%= form.text_field :name, placeholder: "Menu Name", class:"bg-gray-200 text-2xl w-9/12 m-2 p-2 text-gray-700 rounded-md" %>
+
+    <%= form.submit "Create Menu !", class: "my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded" %>
+  <% end %>
+  <ul>
+    <% Menu.all.each do |menu| %>
+      <li class="smooth_border ilist">
+        <h3 class="h-20 rounded-md shadow-md flex hover:text-black text-4xl hover:bg-gray-200">
+            <%= form_with url: "/menus/#{menu.id}", method: "patch", class: "flex" do |form| %>
+              <%= form.check_box :active ,
+                      onclick: "this.form.submit()",
+                      class: "m-6 p-2 w-8 h-8 checkbox_active",
+                      checked: menu.active %>
+              <%= form.text_field :name,
+                      onchange: "this.form.submit()",
+                      value: menu.name,
+                      class: "w-11/12 m-2 p-2 text-gray-700 rounded-md" %>
+            <% end %>
+            <%= form_with url: "/menus/#{menu.id}", method: "delete", class: "small_left_pad" do |form| %>
+              <%= image_submit_tag "delete-48.png",
+                          alt: "Delete",
+                          onclick: "this.form.submit()",
+                          class: "w-8 h-8 m-6" %>
+            <% end %>
+            <button onclick="showItemForm(this)" class="h-10 my-4 bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 border border-blue-700 rounded">
+              Add Item
+            </button>
+            <%= form_with url: menu_items_path, class: "m-5 item-form hidden" do |form| %>
+              <%= render partial: "item-form", locals: {form: form, menu_id: menu.id, item: nil} %>
+            <% end %>
+        </h3>
+        <div class="control hide">
+          <%= render partial: "item-edit", locals: {menu: menu} %>
+        </div>
+        <hr/>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -1,0 +1,191 @@
+.flex {
+  display: flex;
+}
+.pad {
+  padding: 10px 10px 10px 10px;
+}
+.small_left_pad {
+  padding-left: 20px;
+}
+.small_left_mar {
+  margin-left: 20px;
+}
+.small_bot_pad {
+  padding-bottom: 10px;
+}
+.hide {
+  display: none;
+}
+.smooth_border {
+  border-radius: 10px;
+}
+.trashcan {
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+}
+.plus {
+  width: 20px;
+  height: 20px;
+}
+.center {
+  max-width: 900px;
+  margin: 8px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 10px 10px 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  min-height: 500px;
+}
+.disable_list {
+  list-style: none;
+}
+.item_input {
+  height: 30px;
+  width: 100px;
+}
+
+.itemd_input {
+  height: 30px;
+  width: 200px;
+}
+
+.itemp_input {
+  height: 30px;
+  width: 100px;
+}
+.update_btn {
+  background-color: aqua;
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.add_iname {
+  height: 20px;
+  width: 200px;
+}
+.add_ides {
+  height: 20px;
+  width: 300px;
+}
+.add_iprice {
+  height: 20px;
+  width: 200px;
+}
+.add_menu {
+  height: 30px;
+  width: 200px;
+}
+.btn_createm {
+  background-color: rgb(115, 255, 110);
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.error {
+  max-width: 600px;
+  border-radius: 5px;
+  margin: 8px auto;
+  padding: 10px 10px 10px 10px;
+  color: red;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: yellow;
+  font-size: 20px;
+}
+.credential {
+  max-width: 300px;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #40305c;
+  border-radius: 5px;
+}
+.scenter {
+  max-width: 500px;
+  margin: 8px auto;
+}
+.checkbox_active {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+}
+.welcome_user {
+  background-color: darkgray;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  font-family: sans-serif;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.item_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.item_name {
+  padding-left: 10px;
+  font-weight: bold;
+}
+.item_des {
+  padding-left: 20px;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+}
+.message {
+  max-width: 600px;
+  border-radius: 5px;
+  margin: 8px auto;
+  padding: 10px 10px 10px 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(85, 255, 51);
+  font-size: 20px;
+}
+.w-120 {
+  width: 120px;
+}
+.dropbtn {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* Show the dropdown menu on hover */
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:focus .dropbtn {
+  background-color: #3e8e41;
+}

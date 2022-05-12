@@ -1,0 +1,7 @@
+<section>
+  <% if is_owner? %>
+    <%= render partial: "owner-menu" %>
+  <% else %>
+    <%= render partial: "customer-menu" %>
+  <% end %>
+</section>
